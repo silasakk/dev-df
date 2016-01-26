@@ -104,10 +104,10 @@
 			<h4>อีกหนึ่งบททดสอบที่พิสูจน์จนได้ว่าตงฟง V21 แชมเปี้ยน นั้นสุดยอดรถกระบะเล็กเพื่อการบรรทุกจริงๆครับ</h4>
 			<div class="row">
 				<div class="col-sm-6">
-					<img src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt="">
+					<img style="margin-bottom: 20px;" src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt="">
 				</div>
 				<div class="col-sm-6">
-					<img src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt="">
+					<img style="margin-bottom: 20px;" src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt="">
 				</div>
 			</div>
 
