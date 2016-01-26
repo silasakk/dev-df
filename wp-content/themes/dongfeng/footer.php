@@ -25,22 +25,68 @@
 
 
 <script type="text/javascript" charset="utf-8">
-	$(window).load(function () {
-		$('.flexslider').flexslider({
-			directionNav: false,
-            start: function(slider) {
-                slider.removeClass('loading');
-            }
-        });
-	});
+
     $(window).load(function() {
-        $('.flexslider-slide').flexslider({
-            animation: "slide",
-            controlNav: "thumbnails",
-            start: function(slider) {
-                slider.removeClass('loading');
-            }
-        });
+	    $('.flexslider-home').flexslider({
+		    directionNav: false,
+		    start: function(slider) {
+			    slider.removeClass('loading');
+		    }
+	    });
+
+
+	    $('.flexslider-carousel').flexslider({
+		    animation: "slide",
+
+		    controlNav: false,
+		    animationLoop: false,
+		    slideshow: false,
+		    itemWidth: 150,
+		    itemMargin: 5,
+		    asNavFor: '.flexslider-slider',
+
+	    });
+
+	    $('.flexslider-slider').flexslider({
+
+
+		    directionNav: false,
+		    animation: "slide",
+		    controlNav: false,
+		    animationLoop: false,
+		    slideshow: false,
+		    sync: ".flexslider-carousel",
+		    start: function(slider) {
+			    slider.removeClass('loading');
+		    }
+	    });
+
+	    $('.flexslider-carousel2').flexslider({
+		    animation: "slide",
+
+		    controlNav: false,
+		    animationLoop: false,
+		    slideshow: false,
+		    itemWidth: 150,
+		    itemMargin: 5,
+		    asNavFor: '.flexslider-slider2'
+	    });
+
+	    $('.flexslider-slider2').flexslider({
+
+
+		    directionNav: false,
+		    animation: "slide",
+		    controlNav: false,
+		    animationLoop: false,
+		    slideshow: false,
+		    sync: ".flexslider-carousel2",
+		    start: function(slider) {
+			    slider.removeClass('loading');
+		    }
+	    });
+
+
     });
 </script>
 </body>

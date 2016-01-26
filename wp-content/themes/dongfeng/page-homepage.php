@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="section-banner">
     <!-- Place somewhere in the <body> of your page -->
-    <div class="flexslider">
+    <div class="flexslider flexslider-home">
         <ul class="slides">
             <li>
                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/slide1.png"/>

@@ -53,10 +53,10 @@
 						</ul>
 					</li>
 					<li><a href="">ข่าวและกิจกรรม</a></li>
-					<li><a href="">เหตุผลที่เลือกตงฟง</a></li>
+					<li><a href="<?php echo site_url('choose')?>">เหตุผลที่เลือกตงฟง</a></li>
 					<li><a href="">ผู้แทนจำหน่ายทั่วประเทศ</a></li>
 					<li><a href="">ถามตอบ</a></li>
-					<li><a href="">ติดต่อเรา & สมัครงาน</a></li>
+					<li><a href="<?php echo site_url('contact')?>">ติดต่อเรา & สมัครงาน</a></li>
 				</ul>
 
 			</div>

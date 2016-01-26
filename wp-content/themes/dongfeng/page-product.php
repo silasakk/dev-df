@@ -23,17 +23,25 @@
         <section class="section-slot clearfix">
             <div class="row">
                 <div class="col-sm-5">
-                    <div class="flexslider-slide loading">
+                    <div  class="flexslider flexslider-slider">
                         <ul class="slides">
-                            <li data-thumb="<?php echo get_template_directory_uri() ?>/assets/images/tf.png"><img src="<?php echo get_template_directory_uri() ?>/assets/images/tf.png"
-                                     class="img-responsive" alt=""></li>
-                            <li data-thumb="<?php echo get_template_directory_uri() ?>/assets/images/tf.png"><img src="<?php echo get_template_directory_uri() ?>/assets/images/tf.png"
-                                     class="img-responsive" alt=""></li>
-                            <li data-thumb="<?php echo get_template_directory_uri() ?>/assets/images/tf.png"><img src="<?php echo get_template_directory_uri() ?>/assets/images/tf.png"
-                                     class="img-responsive" alt=""></li>
-                            <li data-thumb="<?php echo get_template_directory_uri() ?>/assets/images/tf.png"><img src="<?php echo get_template_directory_uri() ?>/assets/images/tf.png"
-                                     class="img-responsive" alt=""></li>
+                            <li><img src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt=""></li>
+                            <li><img src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt=""></li>
+                            <li><img src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt=""></li>
+                            <li><img src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt=""></li>
+                            <li><img src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt=""></li>
+                            <li><img src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt=""></li>
+                        </ul>
+                    </div>
 
+                    <div  class="flexslider flexslider-carousel carousel">
+                        <ul class="slides">
+                            <li><img src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt=""></li>
+                            <li><img src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt=""></li>
+                            <li><img src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt=""></li>
+                            <li><img src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt=""></li>
+                            <li><img src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt=""></li>
+                            <li><img src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt=""></li>
                         </ul>
                     </div>
 
