@@ -13,7 +13,7 @@
   font-style: normal; }
 body {
   font-family: thaisans_neueregular;
-  line-height: 160%; }
+  line-height: 140%; }
 
 a, a:hover {
   color: #000;
@@ -299,6 +299,35 @@ a, a:hover {
   .fd table {
     font-size: 12px; }
 
+.faq-item {
+  padding: 20px 0;
+  float: left;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed #ccc; }
+  .faq-item span.ico-faq {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background: red;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    display: inline-block; }
+  .faq-item .title {
+    line-height: 30px;
+    position: relative;
+    padding-left: 40px;
+    font-family: thaisans_neuebold;
+    color: #000;
+    min-height: 30px;
+    margin-bottom: 10px; }
+  .faq-item .content {
+    padding-left: 40px;
+    color: #666; }
+
 .single-activity img {
   max-width: 100%;
   height: auto; }
@@ -359,9 +388,6 @@ a, a:hover {
 
   .logo {
     width: auto; }
-  .copyright{
-    text-align: left !important;
-  }
 
   .footer {
     height: 93px;

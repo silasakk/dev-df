@@ -356,6 +356,39 @@ a,a:hover{
     font-size: 12px;
   }
 }
+.faq-item{
+  padding: 20px 0;
+  float: left;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed #ccc;
+
+  span.ico-faq{
+    position: absolute;
+    top:0;
+    left:0;
+    color: #fff;
+    background: red;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    display: inline-block;
+  }
+  .title{
+    line-height: 30px;
+    position: relative;
+    padding-left: 40px;
+    font-family: thaisans_neuebold;
+    color: #000;
+    min-height: 30px;
+    margin-bottom: 10px;
+  }
+  .content{
+    padding-left: 40px;
+    color: #666;
+  }
+}
 
 .single-activity{
   img{

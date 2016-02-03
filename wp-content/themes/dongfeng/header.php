@@ -80,7 +80,7 @@
 					<li><a href="<?php echo site_url('activity')?>">ข่าวและกิจกรรม</a></li>
 					<li><a href="<?php echo site_url('choose')?>">เหตุผลที่เลือกตงฟง</a></li>
 					<li><a href="<?php echo site_url('dealer')?>">ผู้แทนจำหน่ายทั่วประเทศ</a></li>
-					<li><a href="">ถามตอบ</a></li>
+					<li><a href="<?php echo site_url('faq')?>">ถามตอบ</a></li>
 					<li><a href="<?php echo site_url('contact')?>">ติดต่อเรา & สมัครงาน</a></li>
 				</ul>
 

@@ -140,7 +140,7 @@
                                                 <a href="<?php echo get_the_permalink() ?>"><?php echo the_title() ?></a>
                                             </div>
                                             <div class="detail">
-                                                <?php  $suffix = get_the_content(); echo mb_strimwidth($suffix, 0,300,'...'); ?>
+                                                <?php  echo wp_trim_words( get_the_content(), 300, '' )  ?>
                                             </div>
                                             <a href="<?php echo get_the_permalink() ?> " class="read-more">
                                                 อ่านต่อ <i class="fa fa-chevron-right"></i>
