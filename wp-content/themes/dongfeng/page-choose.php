@@ -48,51 +48,57 @@
 
 
 			<div class="slide-content">
-				<div  class="flexslider flexslider-slider loading">
-					<ul class="slides">
-						<li><img src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt=""></li>
-						<li><img src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt=""></li>
-						<li><img src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt=""></li>
-						<li><img src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt=""></li>
-						<li><img src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt=""></li>
-						<li><img src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt=""></li>
-					</ul>
-				</div>
+				<?php
 
-				<div  class="flexslider flexslider-carousel carousel">
-					<ul class="slides">
-						<li><img src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt=""></li>
-						<li><img src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt=""></li>
-						<li><img src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt=""></li>
-						<li><img src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt=""></li>
-						<li><img src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt=""></li>
-						<li><img src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt=""></li>
-					</ul>
-				</div>
+				$images = get_field('gallery_1');
+
+				if( $images ): ?>
+					<div  class="flexslider flexslider-slider loading">
+						<ul class="slides">
+							<?php foreach( $images as $image ): ?>
+
+								<li><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="img-responsive"></li>
+							<?php endforeach; ?>
+						</ul>
+					</div>
+					<div  class="flexslider flexslider-carousel carousel">
+						<ul class="slides">
+							<?php foreach( $images as $image ): ?>
+								<li>
+									<img class="img-responsive" src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
+								</li>
+							<?php endforeach; ?>
+						</ul>
+					</div>
+				<?php endif; ?>
 			</div>
 
-			<div class="slide-content">
-				<div  class="flexslider flexslider-slider2 loading">
-					<ul class="slides">
-						<li><img src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt=""></li>
-						<li><img src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt=""></li>
-						<li><img src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt=""></li>
-						<li><img src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt=""></li>
-						<li><img src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt=""></li>
-						<li><img src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt=""></li>
-					</ul>
-				</div>
+			<div class="clearfix"></div>
 
-				<div class="flexslider flexslider-carousel2 carousel">
-					<ul class="slides">
-						<li><img src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt=""></li>
-						<li><img src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt=""></li>
-						<li><img src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt=""></li>
-						<li><img src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt=""></li>
-						<li><img src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt=""></li>
-						<li><img src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt=""></li>
-					</ul>
-				</div>
+			<div class="slide-content">
+				<?php
+
+				$images = get_field('gallery_2');
+
+				if( $images ): ?>
+					<div  class="flexslider flexslider-slider2 loading">
+						<ul class="slides">
+							<?php foreach( $images as $image ): ?>
+
+								<li><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="img-responsive"></li>
+							<?php endforeach; ?>
+						</ul>
+					</div>
+					<div  class="flexslider flexslider-carousel2 carousel">
+						<ul class="slides">
+							<?php foreach( $images as $image ): ?>
+								<li>
+									<img class="img-responsive" src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
+								</li>
+							<?php endforeach; ?>
+						</ul>
+					</div>
+				<?php endif; ?>
 			</div>
 
 			<br><br>
@@ -103,12 +109,32 @@
 			</div>
 			<h4>อีกหนึ่งบททดสอบที่พิสูจน์จนได้ว่าตงฟง V21 แชมเปี้ยน นั้นสุดยอดรถกระบะเล็กเพื่อการบรรทุกจริงๆครับ</h4>
 			<div class="row">
-				<div class="col-sm-6">
-					<img style="margin-bottom: 20px;" src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt="">
-				</div>
-				<div class="col-sm-6">
-					<img style="margin-bottom: 20px;" src="<?php echo get_template_directory_uri() ?>/assets/images/800x600.png" class="img-responsive" alt="">
-				</div>
+				<?php
+				// Image Right
+				$image = get_field('image_1');
+
+				if (!empty($image)): ?>
+					<div class="col-sm-6">
+						<img style="margin-bottom: 10px;" class="img-responsive" src="<?php echo $image['url']; ?>"
+							 alt="<?php echo $image['alt']; ?>"/>
+					</div>
+
+
+
+				<?php endif; ?>
+
+				<?php
+				// Image Right
+				$image = get_field('image_2');
+
+				if (!empty($image)): ?>
+					<div class="col-sm-6">
+						<img style="margin-bottom: 10px;" class="img-responsive" src="<?php echo $image['url']; ?>"
+							 alt="<?php echo $image['alt']; ?>"/>
+					</div>
+
+
+				<?php endif; ?>
 			</div>
 
 			<br><br>

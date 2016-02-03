@@ -3,12 +3,12 @@
 	<div class="footer">
 		<div class="container">
 			<div class="col-sm-6">
-                <div style="text-align: center ;line-height: 93px; font-size: 12px; ">
+                <div class="copyright" style="text-align: center ;line-height: 93px; font-size: 12px; ">
                     Copyright @2015 dongfeng.co.th All right reserved.
                 </div>
             </div>
-            <div class="col-sm-6">
-                <img style="margin-top: 5px;" src="<?php echo get_template_directory_uri() ?>/assets/images/logo-footer2.jpg" alt="" class="img-responsive pull-right">
+            <div class="col-sm-6" style="text-align: center ;margin-bottom: 10px;">
+                <img style="margin-top: 5px;" src="<?php echo get_template_directory_uri() ?>/assets/images/logo-footer2.jpg" alt="" class="img-responsive lfooter">
             </div>
 
 		</div>
@@ -41,8 +41,8 @@
 		    controlNav: false,
 		    animationLoop: false,
 		    slideshow: false,
-		    itemWidth: 150,
-		    itemMargin: 5,
+		    itemWidth: 100,
+		    itemMargin: 20,
 		    asNavFor: '.flexslider-slider',
 
 	    });
@@ -50,7 +50,7 @@
 	    $('.flexslider-slider').flexslider({
 
 
-		    directionNav: false,
+
 		    animation: "slide",
 		    controlNav: false,
 		    animationLoop: false,
@@ -67,15 +67,15 @@
 		    controlNav: false,
 		    animationLoop: false,
 		    slideshow: false,
-		    itemWidth: 150,
-		    itemMargin: 5,
+		    itemWidth: 100,
+		    itemMargin: 20,
 		    asNavFor: '.flexslider-slider2'
 	    });
 
 	    $('.flexslider-slider2').flexslider({
 
 
-		    directionNav: false,
+
 		    animation: "slide",
 		    controlNav: false,
 		    animationLoop: false,

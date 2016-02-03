@@ -47,14 +47,39 @@
 					<li class="has-sub" onclick="$(this).find('.sub-menu').toggle()">
 						<a href="javascript:;   ">รุ่นรถ <i style="margin-top: 3px" class="fa fa-caret-down pull-right"></i></a>
 						<ul class="sub-menu list-unstyled">
-							<li><a href="<?php echo site_url('product') ?>">V21 CHAMPION</a></li>
-							<li><a href="<?php echo site_url('product') ?>">SAVER</a></li>
-							<li><a href="<?php echo site_url('product') ?>">PLUS</a></li>
+							<?php
+
+							$args = array(
+								'post_type' => 'product'
+							);
+							// the query
+							$the_query = new WP_Query( $args ); ?>
+
+							<?php if ( $the_query->have_posts() ) : ?>
+
+								<!-- pagination here -->
+
+								<!-- the loop -->
+								<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+										<li><a href="<?php echo get_the_permalink()?>"><i style="margin-left: -5px" class="fa fa-caret-right"></i> <?php echo the_title()?></a></li>
+
+
+								<?php endwhile; ?>
+								<!-- end of the loop -->
+
+								<!-- pagination here -->
+
+								<?php wp_reset_postdata(); ?>
+
+
+							<?php endif; ?>
+
 						</ul>
 					</li>
-					<li><a href="">ข่าวและกิจกรรม</a></li>
+					<li><a href="<?php echo site_url('activity')?>">ข่าวและกิจกรรม</a></li>
 					<li><a href="<?php echo site_url('choose')?>">เหตุผลที่เลือกตงฟง</a></li>
-					<li><a href="">ผู้แทนจำหน่ายทั่วประเทศ</a></li>
+					<li><a href="<?php echo site_url('dealer')?>">ผู้แทนจำหน่ายทั่วประเทศ</a></li>
 					<li><a href="">ถามตอบ</a></li>
 					<li><a href="<?php echo site_url('contact')?>">ติดต่อเรา & สมัครงาน</a></li>
 				</ul>
