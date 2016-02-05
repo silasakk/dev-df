@@ -44,8 +44,8 @@
 				<ul class="menu-list-mobile list-unstyled">
 
 					<li><a href="<?php echo site_url('about') ?>">เกี่ยวกับเรา</a></li>
-					<li class="has-sub" onclick="$(this).find('.sub-menu').toggle()">
-						<a href="javascript:;   ">รุ่นรถ <i style="margin-top: 3px" class="fa fa-caret-down pull-right"></i></a>
+					<li class="has-sub"  style="position: relative;" onclick="$(this).find('.sub-menu').toggle()">
+						<a href="javascript:;   ">รุ่นรถ <i style="margin-top: 3px;position: absolute;top: 10px;right: 0" class="fa fa-caret-down pull-right"></i></a>
 						<ul class="sub-menu list-unstyled">
 							<?php
 
