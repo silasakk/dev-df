@@ -47,9 +47,9 @@
                                     <!-- the loop -->
                                     <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
                                         <tr>
-                                            <td width="33%"><?php the_title() ?></td>
-                                            <td width="33%"><?php echo get_field('province') ?></td>
-                                            <td width="33%">T <?php echo get_field('tel') ?>
+                                            <td width="43%" style="padding: 5px;vertical-align: top"><?php the_title() ?></td>
+                                            <td width="23%" style="padding: 5px;vertical-align: top"><?php echo get_field('province') ?></td>
+                                            <td width="33%" style="padding: 5px;vertical-align: top">T <?php echo get_field('tel') ?>
                                                  <?php echo get_field('mobile') ?> </td>
                                         </tr>
                                     <?php endwhile; ?>

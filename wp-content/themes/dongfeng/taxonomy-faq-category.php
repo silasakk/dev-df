@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<?php $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); ?>
 <section class="page-section">
     <div class="container">
         <h1 class="head-page">ถามตอบ</h1>
@@ -6,11 +7,11 @@
         <div class="row">
             <div class="col-sm-3">
                 <div class="faq-cat">
-                    <a class="active" href="<?php echo site_url('faq') ?>">ทั้งหมด</a>
+                    <a href="<?php echo site_url('faq') ?>">ทั้งหมด</a>
                     <?php $categories = get_terms('faq-category', 'hide_empty=0');
 
-                    foreach ($categories as $term): ?>
-                        <a href="<?php echo get_term_link($term) ?>"><?php echo $term->name ?></a>
+                    foreach ($categories as $term_): ?>
+                        <a <?php echo ($term_->term_id == $term->term_id)? "class='active'" : "" ?> href="<?php echo get_term_link($term_) ?>"><?php echo $term_->name ?></a>
                     <?php endforeach ?>
                 </div>
             </div>
@@ -20,8 +21,18 @@
                         <?php
 
                         $args = array(
-                            'post_type' => 'faq'
+                            'post_type' => 'faq',
+                            'tax_query'=>array(
+                                array(
+                                    'taxonomy' => 'faq-category',
+                                    'field' => 'term_id',
+                                    'terms' => $term->term_id
+
+
+                                )
+                            )
                         );
+
                         // the query
                         $the_query = new WP_Query( $args ); ?>
 
@@ -49,10 +60,10 @@
 
                             <?php wp_reset_postdata(); ?>
 
-
                         <?php else: ?>
                             <p class="well">Sorry no data</p>
                         <?php endif; ?>
+
 
 
                     </div>

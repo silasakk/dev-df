@@ -3,7 +3,7 @@
 	<div class="footer">
 		<div class="container">
 			<div class="col-sm-6">
-                <div class="copyright" style="text-align: center ;line-height: 93px; font-size: 12px; ">
+                <div class="copyright" style="line-height: 93px; font-size: 12px; ">
                     Copyright @2015 dongfeng.co.th All right reserved.
                 </div>
             </div>
