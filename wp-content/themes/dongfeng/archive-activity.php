@@ -29,7 +29,7 @@
                 <div class="news-feature">
                     <div class="row">
                         <div class="col-sm-5">
-                            <img class="img-responsive" src="<?php echo get_the_post_thumbnail_url()?>" alt="">
+                            <a href="<?php echo get_permalink() ?>"><img class="img-responsive" src="<?php echo get_the_post_thumbnail_url()?>" alt=""></a>
                         </div>
                         <div class="col-sm-7">
                             <div class="ddate"><?php echo get_the_date('d / m / Y') ?></div>
@@ -80,7 +80,7 @@
                     <!-- the loop -->
                     <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
                         <div class="col-sm-3">
-                            <img class="img-responsive" src="<?php echo get_the_post_thumbnail_url()?>" alt="">
+                            <a href="<?php  echo get_permalink()?>"><img class="img-responsive" src="<?php echo get_the_post_thumbnail_url()?>" alt=""></a>
                             <div class="ddate"><?php echo get_the_date('d / m / Y') ?></div>
                             <div class="title">
                                 <a href="<?php echo get_the_permalink()?>"><?php echo the_title()?></a>

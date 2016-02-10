@@ -399,8 +399,10 @@ a, a:hover {
             .menu-list-mobile li:hover .sub-menu li a:hover {
               border: none; }
 
-  .sub-menu li a {
-    padding: 10px 30px; }
+  .sub-menu {
+    width: 200px; }
+    .sub-menu li a {
+      padding: 10px 30px; }
 
   .img-product-logo {
     margin-top: 0; }
