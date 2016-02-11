@@ -83,7 +83,7 @@
                             <a href="<?php  echo get_permalink()?>"><img class="img-responsive" src="<?php echo get_the_post_thumbnail_url()?>" alt=""></a>
                             <div class="ddate"><?php echo get_the_date('d / m / Y') ?></div>
                             <div class="title">
-                                <a href="<?php echo get_the_permalink()?>"><?php echo the_title()?></a>
+                                <a href="<?php echo get_the_permalink()?>"><?php echo get_the_title()?></a>
                             </div>
                         </div>
 

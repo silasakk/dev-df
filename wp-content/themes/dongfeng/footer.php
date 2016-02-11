@@ -8,7 +8,7 @@
                 </div>
             </div>
             <div class="col-sm-6" style="text-align: center ;margin-bottom: 10px;">
-                <img style="margin-top: 5px;" src="<?php echo get_template_directory_uri() ?>/assets/images/logo-footer2.jpg" alt="" class="img-responsive lfooter">
+				<a target="_blank" href="http://unitedmotors.co.th/"><img style="margin-top: 5px;" src="<?php echo get_template_directory_uri() ?>/assets/images/logo-footer2.jpg" alt="" class="img-responsive lfooter"></a>
             </div>
 
 		</div>
@@ -19,6 +19,8 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="<?php echo get_template_directory_uri() ?>/assets/js/bootstrap.min.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/assets/js/jquery.flexslider-min.js"></script>
+
+<script src="<?php echo get_template_directory_uri() ?>/assets/js/lightgallery.min.js"></script>
 <!-- Place in the <head>, after the three links -->
 
 <?php wp_footer(); ?>
@@ -27,7 +29,10 @@
 <script type="text/javascript" charset="utf-8">
 
     $(window).load(function() {
-	    $('.flexslider-home').flexslider({
+		$("#lightgallery").lightGallery({
+			selector: '.item'
+		});
+		$('.flexslider-home').flexslider({
 		    directionNav: false,
 		    start: function(slider) {
 			    slider.removeClass('loading');

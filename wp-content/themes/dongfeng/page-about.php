@@ -47,6 +47,18 @@
                     <?php the_post();echo the_content(); ?>
                 </div>
             </div>
+            <div class="col-sm-12 text-center">
+                <?php
+
+                $image = get_field('about_page_image_bottom');
+
+                if (!empty($image)): ?>
+
+                    <img class="img-responsive" style="display: inline-block" src="<?php echo $image['url']; ?>"
+                         alt="<?php echo $image['alt']; ?>"/>
+
+                <?php endif; ?>
+            </div>
         </section>
     </div>
 <?php get_footer(); ?>

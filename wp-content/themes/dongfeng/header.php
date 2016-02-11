@@ -15,6 +15,7 @@
 	<link href="<?php echo get_template_directory_uri() ?>/assets/css/bootstrap.css" rel="stylesheet">
 	<link href="<?php echo get_template_directory_uri() ?>/assets/css/font-awesome.min.css" rel="stylesheet">
 	<link href="<?php echo get_template_directory_uri() ?>/assets/css/flexslider.css" rel="stylesheet">
+	<link href="<?php echo get_template_directory_uri() ?>/assets/css/lightgallery.min.css" rel="stylesheet">
 	<!-- Main Style -->
 	<link href="<?php echo get_template_directory_uri() ?>/assets/css/style.css" rel="stylesheet">
 
@@ -24,6 +25,16 @@
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
+
+	<!-- Google Tag Manager -->
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MRS5GG"
+					  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-MRS5GG');</script>
+	<!-- End Google Tag Manager -->
 </head>
 <body <?php body_class(); ?>>
 <section class="head">
@@ -79,9 +90,10 @@
 					</li>
 					<li><a href="<?php echo site_url('activity')?>">ข่าวและกิจกรรม</a></li>
 					<li><a href="<?php echo site_url('choose')?>">เหตุผลที่เลือกตงฟง</a></li>
-					<li><a href="<?php echo site_url('dealer')?>">ผู้แทนจำหน่ายทั่วประเทศ</a></li>
+					<li><a href="<?php echo site_url('dealer')?>">ผู้จำหน่ายทั่วประเทศ</a></li>
 					<li><a href="<?php echo site_url('faq')?>">ถามตอบ</a></li>
-					<li><a href="<?php echo site_url('contact')?>">ติดต่อเรา & สมัครงาน</a></li>
+					<li><a href="<?php echo site_url('career')?>">สมัครงาน</a></li>
+					<li><a href="<?php echo site_url('contact')?>">ติดต่อเรา</a></li>
 				</ul>
 
 			</div>

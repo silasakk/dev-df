@@ -1,23 +1,23 @@
 <?php get_header(); ?>
-    <div class="section-banner">
-        <!-- Place somewhere in the <body> of your page -->
+    <!--<div class="section-banner">
+
         <div class="flexslider flexslider-home">
             <ul class="slides">
                 <li>
-                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/slide1.png"/>
+                    <img src="<?php /*echo get_template_directory_uri() */?>/assets/images/slide1.png"/>
                 </li>
                 <li>
-                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/slide1_0.png"/>
+                    <img src="<?php /*echo get_template_directory_uri() */?>/assets/images/slide1_0.png"/>
                 </li>
                 <li>
-                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/slide2.png"/>
+                    <img src="<?php /*echo get_template_directory_uri() */?>/assets/images/slide2.png"/>
                 </li>
                 <li>
-                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/slide3.png"/>
+                    <img src="<?php /*echo get_template_directory_uri() */?>/assets/images/slide3.png"/>
                 </li>
             </ul>
         </div>
-    </div>
+    </div>-->
 
 <section class="section-con">
 	<div class="container">
@@ -46,7 +46,7 @@
 				<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/assets/images/contact-1.jpg" alt="">
 			</div>
 			<div class="col-sm-6">
-				<div class="txt-head"><h1>Fill Form</h1>
+				<div class="txt-head"><h1>กรอกข้อมูลเพื่อติดต่อ</h1>
 					<div class="hr"></div>
 				</div>
 				<?php echo do_shortcode('[contact-form-7 id="13" title="Contact form 1"]')?>

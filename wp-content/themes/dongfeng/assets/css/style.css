@@ -361,6 +361,39 @@ a, a:hover {
 .copyright {
   text-align: center; }
 
+.career-list {
+  margin-top: 20px; }
+
+.career-panel {
+  border: 1px solid #ccc;
+  margin-bottom: 20px; }
+  .career-panel .title {
+    background: #be1919;
+    color: #fff;
+    padding: 10px;
+    font-size: 18px; }
+  .career-panel .detail {
+    padding: 10px 20px; }
+    .career-panel .detail .career-head {
+      font-size: 16px;
+      padding: 20px 0;
+      font-family: thaisans_neuebold; }
+    .career-panel .detail .download-btn {
+      background: #be1919;
+      color: #fff;
+      padding: 10px;
+      display: inline-block; }
+
+.act-gallery .item {
+  height: 140px;
+  overflow: hidden;
+  display: block;
+  text-align: center; }
+  .act-gallery .item img {
+    display: inline-block; }
+.act-gallery li {
+  margin-bottom: 10px; }
+
 @media (min-width: 992px) {
   .copyright {
     text-align: left; }
