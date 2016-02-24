@@ -34,7 +34,7 @@
                                 <div class="faq-item">
                                     <div class="col-sm-12">
                                         <div class="title"><span class="ico-faq"> Q </span> <?php echo get_the_title() ?></div>
-                                        <div class="content"><?php echo get_the_content() ?></div>
+                                        <div class="content"><span class="ico-faq"> A </span> <?php echo get_the_content() ?></div>
                                     </div>
                                 </div>
 

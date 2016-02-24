@@ -29,12 +29,11 @@
 			</div>
 			<div class="social-box">
 				<div class="social-head">
-					<i class="fa fa-youtube-square"></i> Test drive DSFK Thaikand
+					<i class="fa fa-youtube-square"></i> Test drive DSFK Thailand
 				</div>
 				<div class="social-content">
 					<div class="videoWrapper">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/CL-EUJmg8x0" frameborder="0"
-						        allowfullscreen></iframe>
+						<?php echo get_field('video_test_drive')?>
 					</div>
 				</div>
 			</div>
@@ -103,11 +102,11 @@
 
 			<br><br>
 
-			<div class="txt-head"><h1>การันตรีโดยสื่อมวลชนสายรถยนต์</h1>
+			<div class="txt-head"><h1><?php echo get_field('title_detail') ?></h1>
 				<div class="hr"></div>
 
 			</div>
-			<h4>อีกหนึ่งบททดสอบที่พิสูจน์จนได้ว่าตงฟง V21 แชมเปี้ยน นั้นสุดยอดรถกระบะเล็กเพื่อการบรรทุกจริงๆครับ</h4>
+			<h4><?php echo get_field('detail') ?></h4>
 			<div class="row">
 				<?php
 				// Image Right
@@ -118,8 +117,6 @@
 						<img style="margin-bottom: 10px;" class="img-responsive" src="<?php echo $image['url']; ?>"
 							 alt="<?php echo $image['alt']; ?>"/>
 					</div>
-
-
 
 				<?php endif; ?>
 

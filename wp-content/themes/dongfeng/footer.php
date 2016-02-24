@@ -2,14 +2,18 @@
 <section class="clearfix">
 	<div class="footer">
 		<div class="container">
+			<div class="col-sm-6 ofooter"  style="margin-bottom: 10px;">
+				<a target="_blank" href="http://unitedmotors.co.th/"><img style="margin-top: 15px;" src="<?php echo get_template_directory_uri() ?>/assets/images/logo-footer2.jpg" alt="" class="img-responsive lfooter"></a>
+				<a target="_blank" href="https://www.facebook.com/DFSK.Thailand/"><img style="" src="<?php echo get_template_directory_uri() ?>/assets/images/facebook.png" alt="" class="img-responsive lfooter scc"></a>
+				<a target="_blank" href="https://www.instagram.com/dfsk.thailand/"><img style="" src="<?php echo get_template_directory_uri() ?>/assets/images/insta.png" alt="" class="img-responsive lfooter scc"></a>
+
+			</div>
 			<div class="col-sm-6">
                 <div class="copyright" style="line-height: 93px; font-size: 12px; ">
                     Copyright @2015 dongfeng.co.th All right reserved.
                 </div>
             </div>
-            <div class="col-sm-6" style="text-align: center ;margin-bottom: 10px;">
-				<a target="_blank" href="http://unitedmotors.co.th/"><img style="margin-top: 5px;" src="<?php echo get_template_directory_uri() ?>/assets/images/logo-footer2.jpg" alt="" class="img-responsive lfooter"></a>
-            </div>
+
 
 		</div>
 	</div>
@@ -19,7 +23,6 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="<?php echo get_template_directory_uri() ?>/assets/js/bootstrap.min.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/assets/js/jquery.flexslider-min.js"></script>
-
 <script src="<?php echo get_template_directory_uri() ?>/assets/js/lightgallery.min.js"></script>
 <!-- Place in the <head>, after the three links -->
 

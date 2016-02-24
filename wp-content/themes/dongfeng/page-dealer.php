@@ -20,7 +20,7 @@
                     <?php
                     $categories = get_terms('delear-sector', 'hide_empty=0');
 
-                    foreach ($categories as $term): ?>
+                    foreach ($categories as $k => $term): ?>
 
                         <div class="col-sm-6">
                             <div class="tb-head"><?php echo $term->name ?></div>
@@ -66,7 +66,9 @@
                             </table>
 
                         </div>
-
+                        <?php if((($k + 1) % 2) == 0 && $k > 0):?>
+                            <div class="clearfix"></div>
+                        <?php endif; ?>
                     <?php endforeach ?>
 
 

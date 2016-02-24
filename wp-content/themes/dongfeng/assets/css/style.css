@@ -299,11 +299,13 @@ a, a:hover {
     margin-bottom: 10px;
     display: inline-block; }
   .fd table {
-    font-size: 12px; }
+    font-size: 12px;
+    margin-bottom: 20px; }
 
 .faq-item {
   padding: 20px 0;
   float: left;
+  width: 100%;
   margin-bottom: 20px;
   border-bottom: 1px dashed #ccc; }
   .faq-item span.ico-faq {
@@ -319,6 +321,7 @@ a, a:hover {
     line-height: 30px;
     display: inline-block; }
   .faq-item .title {
+    position: relative;
     line-height: 30px;
     position: relative;
     padding-left: 40px;
@@ -327,8 +330,11 @@ a, a:hover {
     min-height: 30px;
     margin-bottom: 10px; }
   .faq-item .content {
+    position: relative;
     padding-left: 40px;
     color: #666; }
+    .faq-item .content .ico-faq {
+      background: #b5b5b5; }
 
 .single-activity img {
   max-width: 100%;
@@ -394,12 +400,22 @@ a, a:hover {
 .act-gallery li {
   margin-bottom: 10px; }
 
+.lfooter {
+  height: 70px; }
+
+.scc {
+  width: 40px;
+  height: auto; }
+
+.ofooter {
+  text-align: center; }
+
 @media (min-width: 992px) {
   .copyright {
-    text-align: left; }
+    text-align: right; }
 
-  .lfooter {
-    float: right; }
+  .ofooter {
+    text-align: left; }
 
   .menu-mobile {
     display: none; }

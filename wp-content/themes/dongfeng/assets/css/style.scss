@@ -357,11 +357,13 @@ a,a:hover{
   }
   table{
     font-size: 12px;
+    margin-bottom: 20px;
   }
 }
 .faq-item{
   padding: 20px 0;
   float: left;
+  width: 100%;
   margin-bottom: 20px;
   border-bottom: 1px dashed #ccc;
 
@@ -379,6 +381,7 @@ a,a:hover{
     display: inline-block;
   }
   .title{
+    position: relative;
     line-height: 30px;
     position: relative;
     padding-left: 40px;
@@ -388,8 +391,12 @@ a,a:hover{
     margin-bottom: 10px;
   }
   .content{
+    position: relative;
     padding-left: 40px;
     color: #666;
+    .ico-faq{
+      background: #b5b5b5;
+    }
   }
 }
 
@@ -476,14 +483,27 @@ a,a:hover{
     margin-bottom: 10px;
   }
 }
+.lfooter{
 
+  height: 70px;
+
+}
+.scc{
+  width: 40px;
+  height: auto;
+}
+.ofooter{
+  text-align: center;
+}
 @media(min-width:992px){
   .copyright{
+    text-align: right;
+  }
+
+  .ofooter{
     text-align: left;
   }
-  .lfooter{
-    float: right;
-  }
+
   .menu-mobile{display: none}
   .menu-list-mobile{
     display: inline-block;
